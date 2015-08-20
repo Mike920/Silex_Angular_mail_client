@@ -1,0 +1,49 @@
+
+<div  class="pure-u-1" style="        position: fixed;
+        top: 33px;
+        bottom: 0;
+        overflow: auto;">
+<form style="margin-top: 100px;" name="mailboxform" ng-submit="mailboxform.$valid && createMailboxRequest()" class="pure-form pure-form-aligned" autocomplete="off"   >
+    <fieldset>
+
+        <!-- fake fields are a workaround for chrome autofill getting the wrong fields -->
+        <input style="display:none" type="text" name="fakeusernameremembered"/>
+        <input style="display:none" type="password" name="fakepasswordremembered"/>
+
+        <div class="pure-control-group">
+            <label for="provider">Select your email provider</label>
+            <select id="provider" ng-model="mailbox" ng-options="default.name for default in defaults">
+
+            </select>
+        </div>
+        <div class="pure-control-group">
+            <label for="email">Email address</label>
+            <input required ng-model="mailbox.email" id="email" type="email" value="example@gmail.com" autocomplete="off" >
+        </div>
+
+        <div class="pure-control-group">
+            <label for="password">Password</label>
+            <input required ng-model="mailbox.password" id="password" type="password" autocomplete="off" >
+        </div>
+
+        <div class="pure-control-group">
+            <label for="server">Server address</label>
+            <input required ng-model="mailbox.server" id="server" type="text" value="imap.gmail.com">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="port">Port</label>
+            <input required ng-model="mailbox.port" id="port" type="number" value="993">
+        </div>
+
+        <div class="pure-controls">
+            <label for="ssl" class="pure-checkbox">
+                SSL<input ng-model="mailbox.ssl" id="ssl" type="checkbox"   />
+            </label>
+
+            <button type="submit" class="pure-button pure-button-primary" >Submit</button>
+        </div>
+    </fieldset>
+</form>
+
+    </div>

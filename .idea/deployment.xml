@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="silexAngular">
+    <serverData>
+      <paths name="XAMPP Apache">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/var/www/silexTestApp" local="$PROJECT_DIR$" web="/silexapp" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="a">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="silextest" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="silexAngular">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/silexapp" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
+

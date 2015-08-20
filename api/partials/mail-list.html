@@ -1,0 +1,16 @@
+<div id="list" class="pure-u-1">
+    <div class="email-item email-item-unread  pure-g" ng-repeat="email in emails"  >
+        <a ng-href="#/mails/{[email.uid]}" >
+
+        <div class="pure-u-3-4">
+            <h5 class="email-name">{[email.from | extractSender]}</h5>
+            <h4 class="email-subject">{[email.subject]}</h4>
+            <p class="email-desc">
+                {[email.date]}
+            </p>
+        </div>
+        </a>
+    </div>
+
+
+</div>

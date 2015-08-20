@@ -1,0 +1,25 @@
+<div id="main" class="pure-u-1" style="        position: fixed;
+        top: 33px;
+        bottom: 0;
+        overflow: auto;">
+    <div class="email-content">
+        <div class="email-content-header pure-g">
+            <div class="pure-u-1-2">
+                <h1 class="email-content-title">{[emails[mailUid].subject]}</h1>
+                <p class="email-content-subtitle">
+                    From <a>{[emails[mailUid].from | extractSender]}</a> at <span>{[emails[mailUid].date]}</span>
+                </p>
+            </div>
+
+            <div class="email-content-controls pure-u-1-2">
+                <button class="secondary-button pure-button">Reply</button>
+                <button class="secondary-button pure-button">Forward</button>
+                <button class="secondary-button pure-button">Move to</button>
+            </div>
+        </div>
+
+        <div class="email-content-body" ng-bind-html="mailhtml">
+
+        </div>
+    </div>
+</div>
